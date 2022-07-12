@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+  <title>Quote Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="tablet.css" rel="stylesheet" type="text/css" />
+  <link href="mobile.css" rel="stylesheet" type="text/css" />
+  <script src="html2canvas.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h3 class="heading"><a class = "home-page" href="https://quote-generator-group-project-mimodev-nov21.mimodev-nov21.repl.co/">Quote Generator</a></h3>
+      <label for="burger" class="label-burger">&#9776</label>
+      <input id="burger" type="checkbox"/>
+      <div class="nav-links menu">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">All Quotes</a>
+        <a class="nav-link" href="#">Add Quote</a>
+      </div>
+    </nav>
+    <div class = "quote-container">
+      <div id="quote-image" class="quote-image">
+        <div class="quote-text">
+          <p class="quote" id="quote_text">"You are never too old to set another goal or to dream a new dream."</p>
+          <p class="quote-author" id="quote_author">C.S Lewis</p>
+        </div>
+      </div>
+    </div>
+    <div class="quote-functionality">
+      <div class="main-functions">
+        <button id="myBtn" onclick="toggleSection()" class="func-item settings-wrap">
+          <img class="settings-icon" src="icons/tune.svg">
+        </button>
+        <div class="new-quote-wrap">
+          <button onclick="changeQuote()" class="new-quote-btn">
+            <span class="btn-icon"><img src="icons/refresh.svg"></span>
+            <span class="btn-text">New quote</span>
+          </button>
+        </div>
+      </div>
+      <div class="btn-grp">
+        <div class="func-item facebook-wrap"><a
+            href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fquote-generator-group-project-mimodev-nov21.mimodev-nov21.repl.co%2F"
+            class=""><img class="facebook-icon" src="icons/facebook.svg"></a>
+        </div>
+        <div class="func-item twitter-wrap"><a
+            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fquote-generator-group-project-mimodev-nov21.mimodev-nov21.repl.co%2F%23"
+            class=""><img class="twitter-icon" src="icons/twitter.svg"></a>
+        </div>
+        <div class="func-item download-wrap"><a onclick="doCapture()"
+          ><img class="download-icon" src="icons/download.svg"></a>
+      </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content" class="other-functions">
+        <span class="close">&times;</span>
+        <div class="color-settings">
+          <div id="group1" class="font-color-settings">
+            <h3 class="title">FONT COLOR</h3>
+            <label class="radio-grp options">
+              <input class="font-1 color-option" name="group1" type="radio" >
+              <input class="font-2 color-option" name="group1" type="radio">
+              <input class="font-3 color-option" name="group1" type="radio">
+              <input class="font-4 color-option" name="group1" type="radio">
+            </label>
+          </div>
+          <div id="group2" class="background-color-settings">
+            <h3 class="title">BACKGROUND</h3>
+            <label class="radio-grp options btn-wrapper">
+              <input class="bg-1 bg-option" name="group2" type="radio">
+              <input class="bg-2 bg-option" name="group2" type="radio">
+              <input class="bg-3 bg-option" name="group2" type="radio">
+              <input class="bg-4 bg-option" name="group2" type="radio">
+            </label>
+          </div>
+        </div>
+        <div class="layout-settings">
+          <div class="text-layout-settings">
+            <h3 class="title">TEXT LAYOUT</h3>
+            <label class="layout-grp options">
+              <input class="layout-option layout-left" name="group3" type="radio">
+              <input class="layout-option layout-center" name="group3" type="radio">
+              <input class="layout-option layout-right" name="group3" type="radio">
+            </label>
+          </div>
+          <div class="format-layout-settings">
+            <h3 class="title">FORMAT</h3>
+            <label class="format options">
+              <input class="format-option format-vertical" name="group4" type="radio">
+              <input class="format-option format-square" name="group4" type="radio">
+              <input class="format-option format-horizontal" name="group4" type="radio">
+            </label>
+          </div>
+        </div>
+        <div class="font-settings">
+          <h3 class="title">FONT</h3>
+          <select required class="font-select" id="select_font" onchange="fontSelect(this)">
+            <option value="Yeseva One">Poppins</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="fantasy">Fantasy</option>
+          </select>
+          <div class="bg-img-settings">
+            <h3 class="title">RANDOM BG IMAGE</h3>
+            <button onclick="changeBg()" class="random-image-btn">
+              <span class="btn-img"><img class="refresh" src="icons/refresh1.svg"></span>
+              <span class="button-text">Random image</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

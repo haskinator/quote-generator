@@ -1,0 +1,512 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf9f9;
+}
+
+#burger{
+  display: none;
+}
+
+.label-burger{
+  display: none;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #045157;
+}
+
+.home-page {
+  text-decoration: none;
+  color: #045157;
+}
+
+.title {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #5d8c89;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.nav-links {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #5d8c89;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.quote-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #6869ac;
+  border-radius: 40px;
+  padding: 36px 0;
+  height: 520px;
+  /* overflow: scroll; */
+}
+
+
+.quote-text {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  /* overflow:scroll; */
+}
+
+.quote {
+  font-size: 64px;
+  font-family: "Yeseva One", cursive;
+}
+
+.quote-author {
+  font-size: 20px;
+  font-family: "Yeseva One", cursive;
+}
+
+  .main-functions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 62%;
+  /* min-width: 510px; */
+  }
+
+.func-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-left: 32px;
+  flex-shrink: 0;
+  border: none;
+}
+.settings-wrap:hover{
+ background-color: #045157ad;
+}
+.new-quote-btn:hover{
+  background-color: #045157ad;
+}
+.quote-functionality {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 112px;
+  border-radius: 40px;
+  margin-top: 24px;
+}
+
+.toggle-br {
+  border-radius: 40px 40px 0 0;
+}
+
+.quote-functionality a {
+  display: flex;
+}
+
+.btn-grp {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  margin-right: 32px;
+}
+
+.new-quote-wrap {
+  margin-right: 3%;
+}
+
+.settings-wrap {
+  background-color: #045157;
+}
+
+.new-quote-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #045157;
+  width: 180px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.link-wrap {
+  background-color: #85a195;
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.facebook-wrap {
+  background-color: #3b5998;
+}
+
+.facebook-icon {
+  width: 11.86px;
+  height: 24px;
+}
+
+.twitter-wrap {
+  background-color: #1da1f2;
+}
+
+.twitter-icon {
+  width: 24px;
+  height: 19.5px;
+}
+
+.download-wrap {
+  background-color: #045157;
+}
+
+.download-icon {
+  width: 24px;
+  height: 19.5px;
+}
+
+.color-settings {
+  width: 30%;
+}
+
+.color-option + .color-option {
+  margin-left: 12px;
+}
+
+.bg-option + .bg-option {
+  margin-left: 12px;
+}
+
+.toggle-settings {
+  visibility: visible;
+}
+
+.color-settings input {
+  cursor: pointer;
+  appearance: none;
+  margin: 0;
+  min-width: 32px;
+  height: 32px;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid #045157;
+  outline-offset: max(2px, 0.15em);
+}
+
+.font-1 {
+  background-color: white;
+}
+
+.font-2 {
+  background-color: #f3d25a;
+}
+
+.font-3 {
+  background-color: #e1c4cb;
+}
+
+.font-4 {
+  background-color: #1c2078;
+}
+
+.bg-1 {
+  background-color: #6869ac;
+}
+
+.bg-2 {
+  background-color: #85a195;
+}
+
+.bg-3 {
+  background-color: #d3927e;
+}
+
+.bg-4 {
+  background-color: #c7aaaf;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 176px;
+}
+
+.bg-img-settings {
+  margin-top: 6px;
+  width: 95px;
+}
+
+.random-image-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  /* position: relative;
+  top: 15px; */
+  font-size: 12px;
+  flex-direction: column-reverse;
+  color: #045157;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+}
+
+.button-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.font-settings {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 24px;
+  padding-right: 150px;
+  border-left: solid 2px rgba(133, 161, 149, 0.2);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(/icons/expand.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+}
+
+.font-select {
+  cursor: pointer;
+  background-color: white;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 8px;
+  color: #045157;
+}
+
+.layout-settings {
+  width: 25%;
+  padding-left: 24px;
+  border-left: solid 2px rgba(133, 161, 149, 0.2);
+}
+
+.layout-settings input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  min-width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+
+.layout-option,
+.format-option {
+  background-color: white;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.layout-left {
+  background-image: url(icons/align_left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.layout-center {
+  background-image: url(icons/align_center.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.layout-right {
+  background-image: url(icons/align_right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.format-vertical {
+  background-image: url(icons/vertical_rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.format-square {
+  background-image: url(icons/square.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.format-horizontal {
+  background-image: url(icons/horizontal_rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* modul */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 60%; 
+  height: 30%; 
+  bottom: 300px;
+  overflow: auto; /* Enable scroll if needed */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #e7ecea;
+  padding: 20px;
+  border-radius: 40px;
+  bottom: 300px;
+  left: 20%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.5s;
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 300px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.vertical-format {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  padding: 36px 0;
+  height: 720px;
+  width: 40%;
+}
+
+.square {
+  position: relative;
+  width: 50%;
+}
+
+.square-format:after  {
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+.courier{
+  font-family: fantasy;
+}

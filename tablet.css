@@ -1,0 +1,50 @@
+/* @media screen and (max-width: 990px) {
+  .quote{
+    font-size: 2.3rem;
+  }
+  .link-wrap, .instagram-wrap, .facebook-wrap, .twitter-wrap, .download-wrap{
+    height: 44px;
+    width: 44px;
+  }
+  .settings-icon,
+  .link-icon,
+  .instagram-icon,
+  .download-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .func-item{
+    margin-left: 10px;
+  }
+  .btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .new-quote-wrap {
+    margin-right: 10%;
+  }
+  .options {
+    display: flex;
+    width: 150px;
+    height: 30px;
+    flex-direction: row;
+    width: 90%;
+  }
+  .font-select{
+    width: 100px;
+  }
+  input[type="radio"] {
+  min-width: 26px;
+  height: 26px;
+  }
+  input[type="checkbox"] {
+  min-width: 26px;
+  height: 26px;
+  }
+.btn-grp {
+  width: 29%;
+}
+.main-functions {
+  width: 57%;
+}
+} */
