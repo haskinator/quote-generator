@@ -505,7 +505,7 @@ select {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    row-gap: 36px;
+    row-gap: 24px;
     width: 40%;
     z-index: 1;
     top: 52px;

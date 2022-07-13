@@ -195,6 +195,7 @@ const verticalButton = document.querySelector(".format-vertical");
   container.style.justifyContent = "center";
   quoteFormat.style.width = "360px";
   quoteFormat.style.height = "640px";
+  textQuote.style.fontSize = "48px";
 })
 
 const squareButton = document.querySelector(".format-square");
@@ -206,6 +207,7 @@ const squareButton = document.querySelector(".format-square");
   container.style.justifyContent = "center";
   quoteFormat.style.width = "640px";
   quoteFormat.style.height = "640px";
+  textQuote.style.fontSize = "48px";
 })
 
 const horizontalButton = document.querySelector(".format-horizontal");
@@ -217,6 +219,7 @@ const horizontalButton = document.querySelector(".format-horizontal");
   container.style.justifyContent = "center";
   quoteFormat.style.width = "100%";
   quoteFormat.style.height = "520px";
+  textQuote.style.fontSize = "48px";
 })
 
 // font family functionality
