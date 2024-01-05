@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -33,6 +31,9 @@ body {
   max-width: 1440px;
   padding: 0 40px;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -55,6 +56,10 @@ body {
   font-size: 16px;
 }
 
+.quote-container {
+  height: 100%;
+}
+
 .quote-image {
   display: flex;
   justify-content: center;
@@ -63,9 +68,9 @@ body {
   background-color: #6869ac;
   border-radius: 40px;
   padding: 36px 0;
-  min-height: 630px;
+  height: 100%;
+  /* min-height: 630px; */
 }
-
 
 .quote-text {
   text-align: center;
@@ -83,7 +88,6 @@ body {
   font-family: "Yeseva One", cursive;
 }
 
-
 .func-item {
   cursor: pointer;
   display: flex;
@@ -95,17 +99,17 @@ body {
   border: none;
 }
 
-.settings-wrap:hover{
- background-color: #045157ad;
+.settings-wrap:hover {
+  background-color: #045157ad;
 }
 
-.new-quote-btn:hover{
+.new-quote-btn:hover {
   background-color: #045157ad;
 }
 
 .quote-functionality {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   background-color: white;
   border-radius: 40px;
@@ -148,7 +152,9 @@ body {
   padding: 12px 30px;
 }
 
-.radio-grp, .layout-grp, .format {
+.radio-grp,
+.layout-grp,
+.format {
   display: flex;
   column-gap: 12px;
   flex-wrap: wrap;
@@ -208,7 +214,6 @@ body {
   width: 30%;
 }
 
-
 .color-settings input {
   cursor: pointer;
   appearance: none;
@@ -256,10 +261,9 @@ input[type="radio"]:focus {
   background-color: #c7aaaf;
 }
 
-
 .bg-img-settings {
   margin-top: 6px;
-  width:80%;
+  width: 80%;
 }
 
 .random-image-btn {
@@ -322,7 +326,7 @@ select {
   border-left: solid 2px rgba(133, 161, 149, 0.2);
 }
 
-.layout-settings input{
+.layout-settings input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -330,7 +334,6 @@ select {
   height: 32px;
   cursor: pointer;
 }
-
 
 .layout-option,
 .format-option {
@@ -380,8 +383,6 @@ select {
 
 .modal {
   display: none;
-
-
 }
 
 .modal-content {
@@ -391,13 +392,12 @@ select {
   border-radius: 40px;
   background-color: #e7ecea;
   margin-top: 24px;
+  margin-bottom: 24px;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.5s;
   animation-name: slideIn;
   animation-duration: 0.5s;
 }
-
-
 
 /* The Close Button */
 .close {
@@ -413,7 +413,6 @@ select {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
@@ -471,19 +470,16 @@ select {
   width: 50%;
 }
 
-.square-format:after  {
+.square-format:after {
   display: block;
   padding-bottom: 100%;
 }
 
-
-.courier{
+.courier {
   font-family: fantasy;
 }
 
-
-
-@media screen and (max-width: 705px){
+@media screen and (max-width: 705px) {
   .burger-menu {
     display: block;
   }
@@ -497,7 +493,6 @@ select {
     flex-direction: column;
     align-items: center;
     row-gap: 24px;
-
   }
 
   .modal-content {
@@ -523,7 +518,7 @@ select {
       opacity: 1;
     }
   }
-  
+
   @keyframes slideIn {
     from {
       left: -300px;
@@ -534,7 +529,7 @@ select {
       opacity: 1;
     }
   }
-  
+
   @-webkit-keyframes fadeIn {
     from {
       opacity: 0;
@@ -543,7 +538,7 @@ select {
       opacity: 1;
     }
   }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -562,7 +557,9 @@ select {
     padding-top: 8px;
   }
 
-  .radio-grp, .layout-grp, .format {
+  .radio-grp,
+  .layout-grp,
+  .format {
     display: flex;
     column-gap: 12px;
     flex-wrap: wrap;
@@ -586,21 +583,19 @@ select {
     font-size: 42px !important;
     font-family: "Yeseva One", cursive;
   }
-  
+
   .quote-author {
     font-size: 16px !important;
     font-family: "Yeseva One", cursive;
   }
-
-
 }
 
-@media screen and (max-width: 705px){
+@media screen and (max-width: 705px) {
   .quote {
     font-size: 24px !important;
     font-family: "Yeseva One", cursive;
   }
-  
+
   .quote-author {
     font-size: 12px;
     font-family: "Yeseva One", cursive;
@@ -610,17 +605,13 @@ select {
     display: none;
   }
 
+  .quote-image {
+    /* min-height: 300px !important; */
+    /* min-height: 0px; */
+    padding: 0px 0px;
+  }
 
-.quote-image {
-  min-height: 300px !important;
-  /* min-height: 0px; */
-  padding: 0px 0px;
+  .modal-content {
+    width: 60%;
+  }
 }
-
-.modal-content {
-  width: 60%;
-}
-
-
-}
-
